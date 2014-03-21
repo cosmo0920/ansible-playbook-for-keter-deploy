@@ -1,0 +1,5 @@
+---
+- include: upgrade-server.yml
+- include: install-lib.yml
+- include: avahi-daemon.yml
+- include: keter.yml

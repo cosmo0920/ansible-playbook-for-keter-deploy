@@ -1,0 +1,10 @@
+# /opt/keter/etc/keter-config.yaml
+root: ..
+listeners:
+    # HTTP
+    - host: "*4" # Listen on all IPv4 hosts
+      port: 8000 # Could be used to modify port
+    # HTTPS
+    #- host: "*4"
+# User to run applications as
+setuid: cosmo

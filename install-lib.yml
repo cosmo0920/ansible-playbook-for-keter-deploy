@@ -1,0 +1,9 @@
+---
+- hosts: test-servers
+  sudo: yes
+  tasks:
+    - name: be sure libgmp10 is installed
+      apt: name=libgmp10 state=installed
+
+    - name: be sure htop is installed
+      apt: name=htop state=installed
