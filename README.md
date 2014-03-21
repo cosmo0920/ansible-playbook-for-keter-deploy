@@ -1,4 +1,10 @@
-ansible-playbook-for-keter-deploy
-=================================
+Preparing Keter deploy Ansible playbook
+===
 
-keterを使ってのYesodアプリケーションのデプロイする環境を整えるAnsible Playbook
+This is sample preparing keter deployment playbook.
+
+`keter` which is yesod deployment tool is __native binary__, so it should *NOT* install development tool such as haskell-platform and gcc etc in production server.
+
+* Before this playbook run, it needs to put keter binary into binary directory.
+
+* After this playbook running, simply it run scp command to deploy your yesod app.
