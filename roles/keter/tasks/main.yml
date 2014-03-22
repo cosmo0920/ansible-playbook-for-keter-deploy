@@ -1,0 +1,25 @@
+- include_vars:
+    ../vars/external_vars.yml
+- name: copy to files
+  copy: src=etc/keter.conf dest=/etc/init/keter.conf
+
+- name: mkdir /opt/keter/bin
+  file: dest={{bin_dir}} state=directory
+
+- name: mkdir /opt/keter/etc
+  file: dest={{conf_dir}} state=directory
+
+- name: copy to keter-config.yaml
+  copy: src=etc/keter-config.yaml dest=/opt/keter/etc/keter-config.yaml
+
+- name: copy keter binary
+  copy: src=binary/keter dest=/opt/keter/bin
+
+- name: chmod +x keter
+  file: path={{keter_bin}} mode=0755
+
+- name: mkdir /opt/keter/incoming
+  file: dest={{deploy_dir}} state=directory
+
+- name: get ownership /opt/keter/
+  file: path=/opt/keter/incoming owner={{user}}

@@ -7,4 +7,4 @@
     - upgrade-server
     - avahi
     - install-lib
-- include: keter.yml
+    - keter

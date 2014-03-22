@@ -1,0 +1,4 @@
+conf_dir: '/opt/keter/etc'
+bin_dir: '/opt/keter/bin'
+deploy_dir: '/opt/keter/incoming'
+keter_bin: '/opt/keter/bin/keter'
