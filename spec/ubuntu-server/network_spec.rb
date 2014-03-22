@@ -9,6 +9,6 @@ describe host(ENV['SERV_NAME']) do
 end
 
 describe host(ENV['SERV_NAME']) do
-  it { should be_reachable.with(port: 22)  }
+  it { should be_reachable.with(port: :ssh)  }
   it { should be_reachable.with(port: ENV['APP_PORT'])  }
 end

@@ -10,7 +10,7 @@ describe service('keter') do
   it { should be_running }
 end
 
-describe port(80) do
+describe port(:http) do
   it { should_not be_listening }
 end
 
