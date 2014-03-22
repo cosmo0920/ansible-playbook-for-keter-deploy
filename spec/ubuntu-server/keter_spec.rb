@@ -14,7 +14,7 @@ describe port(80) do
   it { should_not be_listening }
 end
 
-describe port(8000) do
+describe port(ENV['APP_PORT']) do
   it { should be_listening }
 end
 

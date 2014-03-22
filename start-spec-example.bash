@@ -1,3 +1,8 @@
 #!/bin/bash
 
-ASK_SUDO_PASSWORD=1 SERV_USER=ubuntu bundle exec rake spec
+export ASK_SUDO_PASSWORD=1
+export SERV_USER=ubuntu
+export SERV_NAME=example-ubuntu-server.net
+export APP_NAME=YesodApp
+export APP_PORT=3000
+bundle exec rake spec

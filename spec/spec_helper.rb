@@ -28,4 +28,6 @@ RSpec.configure do |c|
       c.ssh   = Net::SSH.start(host, user, options)
     end
   end
+  #USE color in STDOUT
+  c.color_enabled = true
 end
