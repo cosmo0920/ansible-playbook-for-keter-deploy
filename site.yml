@@ -1,5 +1,10 @@
 ---
-- include: upgrade-server.yml
-- include: install-lib.yml
-- include: avahi-daemon.yml
+- hosts: test-servers
+  name: Install keter deployment environment
+  sudo: yes
+
+  roles:
+    - upgrade-server
+    - avahi
+    - install-lib
 - include: keter.yml

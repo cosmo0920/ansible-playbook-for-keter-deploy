@@ -1,6 +1,0 @@
----
-- hosts: test-servers
-  sudo: yes
-  tasks:
-    - name: be sure avahi-daemon is installed
-      apt: name=avahi-daemon state=installed
