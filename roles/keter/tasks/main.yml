@@ -10,7 +10,7 @@
   file: dest={{conf_dir}} state=directory
 
 - name: copy to keter-config.yaml
-  copy: src=etc/keter-config.yaml dest=/opt/keter/etc/keter-config.yaml
+  template: src=keter-config.yaml.j2 dest=/opt/keter/etc/keter-config.yaml
 
 - name: copy keter binary
   copy: src=binary/keter dest=/opt/keter/bin
