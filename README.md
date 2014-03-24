@@ -8,3 +8,7 @@ This is sample preparing keter deployment playbook.
 * Before this playbook run, it needs to put keter binary into binary directory.
 
 * After this playbook running, simply it run scp command to deploy your yesod app.
+
+### LICENSE
+
+[MIT](LICENSE).
